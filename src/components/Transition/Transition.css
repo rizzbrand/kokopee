@@ -14,7 +14,7 @@
 .block {
   width: 100px;
   height: 100px;
-  background: var(--color-bg-dark);
+  background: var(--color-dark);
   margin: -0.25px;
   pointer-events: none;
 }

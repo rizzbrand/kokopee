@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 
@@ -12,9 +13,11 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="app">
-      <Menu />
+      <Menu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
