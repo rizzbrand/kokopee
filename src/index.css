@@ -87,9 +87,15 @@ p.primary {
 }
 
 p,
-span {
+span,
+a {
+  text-decoration: none;
   font-family: "PP Editorial New";
   font-size: 18px;
   font-weight: 300;
   line-height: 1.15;
+}
+
+.page {
+  padding: 4em 2em;
 }
