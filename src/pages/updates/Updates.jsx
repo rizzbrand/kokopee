@@ -1,4 +1,5 @@
 import React from "react";
+import Transition from "../../components/transition/Transition";
 
 const Updates = () => {
   return (
@@ -8,4 +9,4 @@ const Updates = () => {
   );
 };
 
-export default Updates;
+export default Transition(Updates);

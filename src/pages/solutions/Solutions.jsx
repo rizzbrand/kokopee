@@ -1,4 +1,5 @@
 import React from "react";
+import Transition from "../../components/transition/Transition";
 
 const Solutions = () => {
   return (
@@ -8,4 +9,4 @@ const Solutions = () => {
   );
 };
 
-export default Solutions;
+export default Transition(Solutions);
