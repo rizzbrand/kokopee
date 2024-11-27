@@ -55,7 +55,7 @@ img {
 h1 {
   text-transform: uppercase;
   font-family: "FK Screamer";
-  font-size: 18vw;
+  font-size: 16vw;
   font-weight: 300;
   line-height: 0.8;
 }
@@ -94,6 +94,23 @@ a {
   line-height: 1.15;
 }
 
+button {
+  position: relative;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0.5em 1em 0.75em 1em;
+  background-color: var(--color-accent) !important;
+}
+
+button a {
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-weight: 300;
+  font-size: 28px;
+}
+
 .page {
   position: relative;
   width: 100vw;
@@ -102,4 +119,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 24vw;
+  }
 }

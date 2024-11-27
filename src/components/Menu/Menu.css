@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 1em;
+  padding: 0.5em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,7 +81,7 @@
 
 .menu-close {
   position: absolute;
-  top: 1em;
+  top: 0.5em;
   right: 1em;
   z-index: 100;
 }
@@ -109,7 +109,7 @@
 
 .menu-item {
   position: relative;
-  height: 80px;
+  height: 100px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -117,21 +117,21 @@
   position: relative;
   line-height: 0;
   height: 0px;
-  line-height: 70px;
+  line-height: 130px;
 }
 
 .menu-item p a {
   position: relative;
   display: inline-block;
-  top: -10px;
+  top: -20px;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-dark);
   font-family: "FK Screamer";
-  font-size: 100px;
+  font-size: 130px;
   font-weight: 300;
-  height: 80px;
-  line-height: 80px;
+  height: 120px;
+  line-height: 120px;
   cursor: pointer;
 }
 
@@ -151,4 +151,10 @@
 .menu-footer {
   opacity: 0;
   will-change: opacity;
+}
+
+@media (max-width: 900px) {
+  .menu-col:nth-child(1) {
+    display: none;
+  }
 }

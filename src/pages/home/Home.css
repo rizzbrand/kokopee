@@ -12,3 +12,66 @@ section.hero {
   width: 100%;
   height: 100%;
 }
+
+.hero-header {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  padding-left: 10em;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-header h1 {
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.hero-header p {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  color: var(--color-accent);
+  font-size: 24px;
+  text-align: center;
+}
+
+.news-article {
+  position: absolute;
+  bottom: 1.5em;
+  right: 1em;
+  min-width: 300px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: var(--color-accent);
+}
+
+.news-article-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.news-article-info p:nth-child(2) {
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .hero-header {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .news-article {
+    width: calc(100% - 2em);
+  }
+
+  .news-article br {
+    display: none;
+  }
+}
