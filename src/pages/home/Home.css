@@ -32,10 +32,19 @@ section.hero {
 
 .hero-header p {
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   color: var(--color-accent);
   font-size: 24px;
   text-align: center;
+}
+
+.hero-header .stickers {
+  width: 70%;
+  margin-bottom: 4em;
+}
+
+.hero-header .stickers img {
+  object-fit: contain;
 }
 
 .news-article {

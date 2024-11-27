@@ -17,6 +17,9 @@ const Home = () => {
             Balanced <br /> Pitch
           </h1>
           <p>In the Dawn of AI Revolution</p>
+          <div className="stickers">
+            <img src="/stickers.png" alt="" />
+          </div>
           <button>
             <Link to="/contact">Get in touch</Link>
           </button>
