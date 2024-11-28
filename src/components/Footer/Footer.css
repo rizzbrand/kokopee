@@ -123,3 +123,17 @@
   font-weight: 300;
   color: var(--color-dark);
 }
+
+@media (max-width: 900px) {
+  .footer-form {
+    bottom: unset;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 2em);
+  }
+
+  .footer-col p.primary {
+    margin-bottom: 1em;
+    font-size: 24px;
+  }
+}

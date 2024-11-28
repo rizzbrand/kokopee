@@ -11,45 +11,45 @@ const Footer = () => {
 
       <div className="footer-nav">
         <div className="footer-nav-link">
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </div>
         <div className="footer-nav-link">
-          <Link to="/">Solutions</Link>
+          <Link to="/solutions">Solutions</Link>
         </div>
         <div className="footer-nav-link">
-          <Link to="/">News</Link>
+          <Link to="/updates">Updates</Link>
         </div>
         <div className="footer-nav-link">
-          <Link to="/">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </div>
       </div>
 
       <div className="footer-outro">
         <div className="footer-col">
-          <p>Questions</p>
-          <h3>Contact Us</h3>
+          <p>Have Questions?</p>
+          <h3>Get in Touch</h3>
           <p className="primary">
-            Info@soundethics.ai <br />
+            Info@balancedpitch.com <br />
             LinkedIn / Careers
           </p>
-          <p>© 2024 Sound Ethics Inc.</p>
+          <p>© 2024 Balanced Pitch</p>
         </div>
         <div className="footer-col">
-          <p>Visiting?</p>
-          <h3>Finding Us</h3>
+          <p>Planning a Visit?</p>
+          <h3>Our Location</h3>
           <p className="primary">
-            1800 Vine Street <br />
-            Hollywood, CA 90028, USA
+            123 Harmony Lane <br />
+            Los Angeles, CA 90210, USA
           </p>
-          <p>Made by SFCO</p>
+          <p>Designed by Codegrid</p>
         </div>
       </div>
 
       <div className="footer-form">
-        <p className="primary">Your voice matters!</p>
-        <p>Advocate for Fair AI in Music</p>
+        <p className="primary">Make Your Voice Heard!</p>
+        <p>Stand for Ethical AI in Music</p>
 
-        <span>Sign our petition and support the future of music artists</span>
+        <span>Join our movement to protect and empower music creators.</span>
 
         <div className="footer-ws"></div>
 

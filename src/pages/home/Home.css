@@ -69,6 +69,170 @@ section.hero {
   font-weight: 500;
 }
 
+.site-intro {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  gap: 4em;
+  padding: 2em;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.intro-col:nth-child(1) {
+  flex: 3;
+  text-align: center;
+}
+
+.intro-col:nth-child(1) p.primary {
+  padding-bottom: 0.25em;
+}
+
+.intro-col:nth-child(2) {
+  flex: 2.5;
+}
+
+.intro-col:nth-child(2) h2 {
+  margin-top: 0.125em;
+  line-height: 0.8;
+}
+
+.intro-col:nth-child(2) h3 {
+  margin: 0.5em 0 0.75em 0;
+}
+
+.intro-col:nth-child(2) p {
+  margin-bottom: 2em;
+}
+
+.intro-img {
+  width: 100%;
+  height: 500px;
+}
+
+.cover {
+  position: relative;
+  width: 100vw;
+  height: 125vh;
+  padding: 2em;
+}
+
+.cover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-copy {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4em;
+  color: var(--color-light);
+}
+
+.cover-copy h2 {
+  position: relative;
+  top: -0.05em;
+  left: -0.05em;
+  margin-bottom: 0.25em;
+}
+
+.cover-cta {
+  margin: 2em 0;
+}
+
+.mix-tape {
+  position: relative;
+  width: 100vw;
+  padding: 2em 0;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.mix-tape h1 {
+  margin-top: 0.25em;
+}
+
+.mix-tape p.primary {
+  padding-bottom: 0.25em;
+}
+
+.tape {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.strip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+}
+
+.tape-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+
+.tape-info {
+  width: 40%;
+  margin: 2em auto;
+}
+
+.tape-info p:nth-child(1) {
+  font-weight: 500;
+}
+
+.tape-info .sticker {
+  margin-top: 4em;
+}
+
+.latest-updates {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 2em 1em;
+}
+
+.latest-updates h1 {
+  text-align: center;
+  font-size: 21.5vw;
+  margin-bottom: 0.5em;
+}
+
+.latest-updates p.lp-tagline {
+  text-align: center;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.updates-page-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.updates-page-link a {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 28px;
+  color: var(--color-dark);
+}
+
+.latest-updates .article-link p a {
+  color: var(--color-dark);
+}
+
 @media (max-width: 900px) {
   .hero-header {
     width: 100%;
@@ -82,5 +246,35 @@ section.hero {
 
   .news-article br {
     display: none;
+  }
+
+  .site-intro {
+    flex-direction: column;
+  }
+
+  .intro-col:nth-child(2) h3 {
+    margin: 0.25em 0 0.5em 0;
+  }
+
+  .cover {
+    height: 100vh;
+  }
+
+  .cover-copy {
+    width: 100%;
+    right: 0;
+    padding: 1em;
+  }
+
+  .tape-img {
+    width: 75%;
+  }
+
+  .tape-info {
+    width: 90%;
+  }
+
+  .latest-updates p.lp-tagline {
+    width: 90%;
   }
 }

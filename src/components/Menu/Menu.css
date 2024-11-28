@@ -29,6 +29,11 @@
   cursor: pointer;
 }
 
+.logo {
+  width: 50px;
+  padding-top: 0.75em;
+}
+
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -156,5 +161,10 @@
 @media (max-width: 900px) {
   .menu-col:nth-child(1) {
     display: none;
+  }
+
+  .menu-footer {
+    width: 90%;
+    text-align: center;
   }
 }

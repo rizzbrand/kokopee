@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import gsap from "gsap";
-
 import "./Menu.css";
+
+import gsap from "gsap";
 
 const Menu = ({ isOpen, setIsOpen }) => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -181,7 +181,7 @@ const Menu = ({ isOpen, setIsOpen }) => {
       <div className="menu-bar">
         <div className="logo">
           <Link to="/" onClick={handleNavigation("/")}>
-            Balanced Pitch
+            <img src="/logo.png" alt="" />
           </Link>
         </div>
 
@@ -240,8 +240,8 @@ const Menu = ({ isOpen, setIsOpen }) => {
           </div>
 
           <div className="menu-footer" ref={menuFooterRef}>
-            <p className="primary">Embrase AI. Champions Artists.</p>
-            <p>In the Dawn of AI Revolution</p>
+            <p className="primary">Empowering Creativity. Redefining Sound.</p>
+            <p>Shaping the Future of Music with AI</p>
           </div>
         </div>
       </div>
