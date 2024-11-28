@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/transition/Transition";
+import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 
 import "./Contact.css";
 
@@ -15,7 +16,7 @@ const Contact = () => {
       <div className="page contact">
         <section className="contact-hero">
           <div className="contact-hero-img">
-            <img src="/contact/hero.jpg" alt="" />
+            <ParallaxImage src="/contact/hero.jpg" alt="" />
           </div>
 
           <div className="contact-hero-header">
@@ -119,7 +120,7 @@ const Contact = () => {
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img
+              <ParallaxImage
                 src="/contact/banner.jpg"
                 alt="Innovating the Future of Music"
               />

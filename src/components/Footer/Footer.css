@@ -14,9 +14,10 @@
 }
 
 .footer-bg div {
+  position: absolute;
   width: 100%;
   height: 100%;
-  transform: scale(1.135);
+  transform: scale(2);
 }
 
 .footer-bg img {

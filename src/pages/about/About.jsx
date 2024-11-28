@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/transition/Transition";
+import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 
 import "./About.css";
 
@@ -15,7 +16,7 @@ const About = () => {
       <div className="page about">
         <section className="solutions-hero about-hero">
           <div className="solutions-hero-img">
-            <img src="/about/hero.jpg" alt="" />
+            <ParallaxImage src="/about/hero.jpg" alt="" />
           </div>
           <div className="solutions-hero-header about-hero-header">
             <h1>Our Story</h1>
@@ -31,7 +32,7 @@ const About = () => {
           <div className="about-us-col">
             <div className="sign-up-card">
               <div className="sign-up-img">
-                <img src="/about/sign-up-card.jpg" alt="" />
+                <ParallaxImage src="/about/sign-up-card.jpg" alt="" />
               </div>
               <div className="sign-up-card-header">
                 <h3>
@@ -71,7 +72,7 @@ const About = () => {
 
         <section className="team">
           <div className="team-bg">
-            <img src="/about/team-bg.jpg" alt="" />
+            <ParallaxImage src="/about/team-bg.jpg" alt="" />
           </div>
           <div className="team-header">
             <h3>The Balanced</h3>
@@ -95,7 +96,11 @@ const About = () => {
             <div className="team-list-row">
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team1.jpg" alt="Team member 1" />
+                  <ParallaxImage
+                    src="/about/team1.jpg"
+                    alt="Team member 1"
+                    speed={0.1}
+                  />
                 </div>
                 <div className="player-info">
                   <h3>Alex Morgan</h3>
@@ -116,7 +121,11 @@ const About = () => {
               </div>
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team2.jpg" alt="Team member 2" />
+                  <ParallaxImage
+                    src="/about/team2.jpg"
+                    alt="Team member 2"
+                    speed={0.1}
+                  />
                 </div>
                 <div className="player-info">
                   <h3>Jordan Lee</h3>
@@ -138,7 +147,11 @@ const About = () => {
             <div className="team-list-row">
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team3.jpg" alt="Team member 3" />
+                  <ParallaxImage
+                    src="/about/team3.jpg"
+                    alt="Team member 3"
+                    speed={0.1}
+                  />
                 </div>
                 <div className="player-info">
                   <h3>Samantha Grey</h3>
@@ -158,7 +171,11 @@ const About = () => {
               </div>
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team4.jpg" alt="Team member 4" />
+                  <ParallaxImage
+                    src="/about/team4.jpg"
+                    alt="Team member 4"
+                    speed={0.1}
+                  />
                 </div>
                 <div className="player-info">
                   <h3>Riley Bennett</h3>
@@ -294,7 +311,10 @@ const About = () => {
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img src="/about/banner.jpg" alt="Balanced Pitch Banner" />
+              <ParallaxImage
+                src="/about/banner.jpg"
+                alt="Balanced Pitch Banner"
+              />
             </div>
           </div>
         </section>

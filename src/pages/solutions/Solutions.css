@@ -118,6 +118,7 @@
   position: relative;
   width: 100vw;
   height: 125vh;
+  overflow: hidden;
 }
 
 .callout-bg {
@@ -265,5 +266,9 @@ section.rights {
 
   .right-title h3 {
     font-size: 8vw;
+  }
+
+  .solutions-hero-img div {
+    transform: scale(3);
   }
 }

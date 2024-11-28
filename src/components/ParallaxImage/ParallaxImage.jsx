@@ -1,10 +1,14 @@
 import React, { useRef, useEffect } from "react";
-import { ReactLenis, useLenis } from "lenis/react";
+import { useLenis } from "lenis/react";
 
-const ParallaxImage = ({ src, alt, className = "", speed = 0.2 }) => {
+const lerp = (start, end, factor) => start + (end - start) * factor;
+
+const ParallaxImage = ({ src, alt }) => {
   const imageRef = useRef(null);
   const bounds = useRef(null);
-  const currentScroll = useRef(0);
+  const currentTranslateY = useRef(0);
+  const targetTranslateY = useRef(0);
+  const rafId = useRef(null);
 
   useEffect(() => {
     const updateBounds = () => {
@@ -19,30 +23,50 @@ const ParallaxImage = ({ src, alt, className = "", speed = 0.2 }) => {
 
     updateBounds();
     window.addEventListener("resize", updateBounds);
-    return () => window.removeEventListener("resize", updateBounds);
+
+    const animate = () => {
+      if (imageRef.current) {
+        currentTranslateY.current = lerp(
+          currentTranslateY.current,
+          targetTranslateY.current,
+          0.1
+        );
+
+        if (
+          Math.abs(currentTranslateY.current - targetTranslateY.current) > 0.01
+        ) {
+          imageRef.current.style.transform = `translateY(${currentTranslateY.current}px) scale(1.5)`;
+        }
+      }
+      rafId.current = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      window.removeEventListener("resize", updateBounds);
+      if (rafId.current) {
+        cancelAnimationFrame(rafId.current);
+      }
+    };
   }, []);
 
   useLenis(({ scroll }) => {
-    if (!imageRef.current || !bounds.current) return;
-
-    currentScroll.current = scroll;
+    if (!bounds.current) return;
     const relativeScroll = scroll - bounds.current.top;
-    const translateY = relativeScroll * speed;
-
-    imageRef.current.style.transform = `translateY(${translateY}px) scale(1.25)`;
-    imageRef.current.style.willChange = `transform`;
+    targetTranslateY.current = relativeScroll * 0.2;
   });
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      <img
-        ref={imageRef}
-        src={src}
-        alt={alt}
-        className="w-full h-full object-cover will-change-transform"
-        style={{ transform: "translateY(0)", willChange: "transform" }}
-      />
-    </div>
+    <img
+      ref={imageRef}
+      src={src}
+      alt={alt}
+      style={{
+        willChange: "transform",
+        transform: "translateY(0) scale(1.5)",
+      }}
+    />
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/transition/Transition";
+import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 
 import "./Solutions.css";
 
@@ -14,7 +15,7 @@ const Solutions = () => {
       <div className="page solutions">
         <section className="solutions-hero about-hero">
           <div className="solutions-hero-img">
-            <img src="/solutions/hero.jpg" alt="" />
+            <ParallaxImage src="/solutions/hero.jpg" alt="" />
           </div>
           <div className="solutions-hero-header about-hero-header">
             <h1>Solutions</h1>
@@ -57,7 +58,7 @@ const Solutions = () => {
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img
+              <ParallaxImage
                 src="/solutions/banner.jpg"
                 alt="Empowering Creators Through Innovation"
               />
@@ -152,7 +153,7 @@ const Solutions = () => {
 
         <section className="solutions-callout">
           <div className="callout-bg">
-            <img
+            <ParallaxImage
               src="/solutions/callout-bg.jpg"
               alt="Ethical AI Callout Background"
             />
@@ -278,7 +279,7 @@ const Solutions = () => {
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img
+              <ParallaxImage
                 src="/solutions/banner2.jpg"
                 alt="Balanced Pitch Innovation"
               />

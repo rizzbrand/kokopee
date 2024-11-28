@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/transition/Transition";
+import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 
 import "./Updates.css";
 
@@ -189,7 +190,7 @@ const Updates = () => {
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img
+              <ParallaxImage
                 src="/updates/banner.jpg"
                 alt="Driving Innovation with Integrity"
               />
