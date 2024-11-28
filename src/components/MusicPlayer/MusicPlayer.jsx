@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
@@ -21,7 +22,9 @@ const MusicPlayer = () => {
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isFlipping, setIsFlipping] = useState(false);
   const audioRef = useRef(null);
+  const diskRef = useRef(null);
 
   useEffect(() => {
     if (audioRef.current) {
@@ -40,7 +43,7 @@ const MusicPlayer = () => {
       if (isPlaying) {
         audioRef.current.play().catch((error) => {
           console.error("Error playing audio:", error);
-          setIsPlaying(false);
+          setIsFlipping(false);
         });
       } else {
         audioRef.current.pause();
@@ -48,17 +51,34 @@ const MusicPlayer = () => {
     }
   }, [isPlaying]);
 
-  const handlePrevious = () => {
-    setCurrentSongIndex((prev) => (prev === 0 ? songs.length - 1 : prev - 1));
+  const handleFlip = (direction) => {
+    if (isFlipping) return;
+    setIsFlipping(true);
+
+    const nextIndex =
+      direction === "next"
+        ? currentSongIndex === songs.length - 1
+          ? 0
+          : currentSongIndex + 1
+        : currentSongIndex === 0
+        ? songs.length - 1
+        : currentSongIndex - 1;
+
+    const currentRotation = gsap.getProperty(diskRef.current, "rotateY");
+    gsap.to(diskRef.current, {
+      duration: 1,
+      rotateY: currentRotation + 180,
+      ease: "power1.inOut",
+      onComplete: () => {
+        setCurrentSongIndex(nextIndex);
+        setIsFlipping(false);
+      },
+    });
   };
 
-  const handleNext = () => {
-    setCurrentSongIndex((prev) => (prev === songs.length - 1 ? 0 : prev + 1));
-  };
-
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
+  const handlePrevious = () => handleFlip("prev");
+  const handleNext = () => handleFlip("next");
+  const togglePlay = () => setIsPlaying(!isPlaying);
 
   return (
     <div className="player-container">
@@ -68,11 +88,22 @@ const MusicPlayer = () => {
       </audio>
 
       <div className="vinyl-container">
-        <img
-          src={songs[currentSongIndex].diskArt}
-          alt={`Vinyl for ${songs[currentSongIndex].title}`}
-          className={isPlaying ? "spinning" : ""}
-        />
+        <div className="disk-wrapper" ref={diskRef}>
+          <div className="disk-side front">
+            <img
+              src={songs[0].diskArt}
+              alt={`Vinyl for ${songs[0].title}`}
+              className={isPlaying ? "spinning" : ""}
+            />
+          </div>
+          <div className="disk-side back">
+            <img
+              src={songs[1].diskArt}
+              alt={`Vinyl for ${songs[1].title}`}
+              className={isPlaying ? "spinning" : ""}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="song-info">
@@ -85,6 +116,7 @@ const MusicPlayer = () => {
           onClick={handlePrevious}
           className="control-button"
           aria-label="Previous track"
+          disabled={isFlipping}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -143,6 +175,7 @@ const MusicPlayer = () => {
           onClick={handleNext}
           className="control-button"
           aria-label="Next track"
+          disabled={isFlipping}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
