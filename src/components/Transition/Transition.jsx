@@ -52,9 +52,8 @@ const Transition = (Page) => {
               animate={{ opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{
-                duration: 0.01,
+                duration: 0.005,
                 delay: 0.25 + block.delay,
-                ease: "steps(1)",
               }}
             />
           ))}
@@ -73,14 +72,10 @@ const Transition = (Page) => {
               className="block"
               initial={{ opacity: 0 }}
               animate={{ opacity: 0 }}
-              exit={{
-                opacity: [0, 0, 1],
-                transition: {
-                  duration: 0.02,
-                  times: [0, 0.99, 1],
-                  delay: 0.25 + block.delay,
-                  ease: "steps(1)",
-                },
+              exit={{ opacity: 1 }}
+              transition={{
+                duration: 0.005,
+                delay: 0.25 + block.delay,
               }}
             />
           ))}

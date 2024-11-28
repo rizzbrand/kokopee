@@ -1,10 +1,11 @@
 import React from "react";
-import Transition from "../../components/transition/Transition";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
-import { ReactLenis, useLenis } from "lenis/react";
+import Transition from "../../components/transition/Transition";
 
 import "./Home.css";
+
+import { ReactLenis, useLenis } from "lenis/react";
 
 const Home = () => {
   const lenis = useLenis(({ scroll }) => {});

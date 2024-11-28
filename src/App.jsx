@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-
 import Menu from "./components/Menu/Menu";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -15,9 +14,11 @@ function App() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const isDarkMenu = location.pathname === "/updates";
+
   return (
     <div className="app">
-      <Menu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+      <Menu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} isDark={isDarkMenu} />
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />

@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5em 0 2em 0;
+  text-align: center;
 }
 
 .solutions-hero-img {
@@ -147,7 +148,7 @@ section.rights {
   width: 100vw;
   color: var(--color-dark);
   text-align: center;
-  padding: 1em;
+  padding: 4em 1em;
 }
 
 .rights h1 {
@@ -174,15 +175,15 @@ section.rights {
   position: relative;
   width: 100vw;
   display: flex;
-  gap: 4em;
-  background-color: var(--color-dark);
   color: var(--color-light);
-  padding: 4em 2em;
 }
 
 .right {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  padding: 8em 2em;
   flex: 1;
   text-align: center;
+  background-color: var(--color-dark);
 }
 
 .right-index,
@@ -207,4 +208,62 @@ section.rights {
 
 .right-desc .right-desc-line:last-child {
   border-bottom: none;
+}
+
+.features-copy:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 900px) {
+  .page.solutions .solutions-hero-info {
+    width: 90%;
+  }
+
+  .features-header,
+  .features-copy {
+    width: calc(100% - 2em);
+    gap: 0.5em;
+  }
+
+  .features-header h3 {
+    top: -4px;
+    font-size: 8vw;
+  }
+
+  .solutions-callout {
+    height: 100vh;
+  }
+
+  .callout-copy {
+    width: calc(100% - 2em);
+  }
+
+  .callout-copy h2 {
+    font-size: 14vw;
+  }
+
+  .rights h1 {
+    font-size: 30vw;
+  }
+
+  .rights p {
+    width: calc(100% - 2em);
+  }
+
+  .rights-list {
+    flex-direction: column;
+  }
+
+  .right {
+    padding: 6em 2em;
+    margin: 1em;
+  }
+
+  .right p {
+    font-size: 30px;
+  }
+
+  .right-title h3 {
+    font-size: 8vw;
+  }
 }

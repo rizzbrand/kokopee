@@ -207,3 +207,35 @@ section.contact-banner {
   width: 75%;
   margin: 0 auto;
 }
+
+@media (max-width: 900px) {
+  section.contact-banner {
+    flex-direction: column-reverse;
+    height: 175vh;
+  }
+
+  .contact-hero-header {
+    width: 90%;
+  }
+
+  .contact-hero-header h1 {
+    font-size: 22vw;
+  }
+
+  .contact-hero-header .stickers {
+    width: 90%;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .form-col:nth-child(1) {
+    gap: 2em;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}

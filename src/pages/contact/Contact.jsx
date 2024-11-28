@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
-import Transition from "../../components/transition/Transition";
 import Footer from "../../components/Footer/Footer";
-import { ReactLenis, useLenis } from "lenis/react";
+import Transition from "../../components/transition/Transition";
+
 import "./Contact.css";
+
+import { ReactLenis, useLenis } from "lenis/react";
 
 const Contact = () => {
   const lenis = useLenis(({ scroll }) => {});
@@ -27,20 +29,22 @@ const Contact = () => {
             <div className="form-col">
               <div className="form-header">
                 <p className="primary">
-                  Join Us In Advocating For Fair AI In Music. Sign The Petition.
+                  Take a Stand for Fair AI in Music. Together, We Can Create
+                  Change.
                 </p>
-                <p>Your Voice Matters</p>
+                <p>Make Your Voice Count</p>
+
                 <button>
                   <Link to="/contact">Sign Up</Link>
                 </button>
               </div>
               <div className="form-details">
                 <div className="join-our-team">
-                  <p className="primary">Join Our Team</p>
+                  <p className="primary">Be Part of Our Mission</p>
                   <p>
-                    Want to make a difference? Explore our open positions and
-                    apply now. Click the link below to view job details and
-                    apply.
+                    Ready to create an impact? Discover our available roles and
+                    take the next step in your career. Click below to explore
+                    opportunities and apply today.
                   </p>
                 </div>
                 <div className="divider"></div>
@@ -92,32 +96,37 @@ const Contact = () => {
           <div className="contact-banner-col">
             <div className="contact-banner-header">
               <h2>
-                Balanced <br />
-                Pitch Inc.
+                Innovating the <br />
+                Future of Music
               </h2>
               <p className="primary">
-                1800 vine streethollywood, ca 90028, usa
+                Let’s connect to redefine creativity in the age of AI.
               </p>
             </div>
 
             <div className="banner-contact">
-              <p className="primary">Info@balancedpitch.ai</p>
-              <p>Established 2024</p>
+              <p className="primary">Contact@balancedpitch.com</p>
+              <p>Founded in 2024</p>
             </div>
             <div className="banner-info">
               <p>
-                Sound Ethics Data offers meticulously curated datasets for
-                machine learning, embedded with comprehensive attribution
-                metadata and advanced machine learning features.
+                At Balanced Pitch, we provide ethical, AI-ready datasets
+                designed to empower creators and developers. Our solutions
+                ensure transparency, protect intellectual property, and set a
+                new standard for innovation in the music industry.
               </p>
             </div>
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img src="/contact/banner.jpg" alt="" />
+              <img
+                src="/contact/banner.jpg"
+                alt="Innovating the Future of Music"
+              />
             </div>
           </div>
         </section>
+
         <Footer />
       </div>
     </ReactLenis>

@@ -29,6 +29,27 @@
   cursor: pointer;
 }
 
+.menu.dark .menu-bar a,
+.menu.dark .menu-bar p {
+  color: var(--color-dark);
+}
+
+.menu #logo-dark {
+  display: none;
+}
+
+.menu #logo-light {
+  display: block;
+}
+
+.menu.dark #logo-light {
+  display: none;
+}
+
+.menu.dark #logo-dark {
+  display: block;
+}
+
 .logo {
   width: 50px;
   padding-top: 0.75em;

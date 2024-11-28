@@ -1,9 +1,11 @@
 import React from "react";
-import Transition from "../../components/transition/Transition";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
-import { ReactLenis, useLenis } from "lenis/react";
+import Transition from "../../components/transition/Transition";
+
 import "./About.css";
+
+import { ReactLenis, useLenis } from "lenis/react";
 
 const About = () => {
   const lenis = useLenis(({ scroll }) => {});
@@ -11,7 +13,7 @@ const About = () => {
   return (
     <ReactLenis root>
       <div className="page about">
-        <section className="solutions-hero">
+        <section className="solutions-hero about-hero">
           <div className="solutions-hero-img">
             <img src="/about/hero.jpg" alt="" />
           </div>
@@ -22,20 +24,20 @@ const About = () => {
             </div>
           </div>
           <div className="about-hero-info">
-            <p>Advocating For Artists’ Rights & New Standards For Ethical AI</p>
+            <p>Championing Artists’ Rights and Defining Ethical AI Standards</p>
           </div>
         </section>
         <section className="about-us">
           <div className="about-us-col">
             <div className="sign-up-card">
               <div className="sign-up-img">
-                <img src="/about/hero.jpg" alt="" />
+                <img src="/about/sign-up-card.jpg" alt="" />
               </div>
               <div className="sign-up-card-header">
                 <h3>
-                  Join us in advocating for fair AI in music. Sign the petition!
+                  Stand with us for ethical AI in music. Add your name today!
                 </h3>
-                <p>Your Voice Matters</p>
+                <p>Every Voice Counts</p>
               </div>
               <div className="sign-up-cta">
                 <button>
@@ -46,21 +48,22 @@ const About = () => {
           </div>
           <div className="about-us-col">
             <h3>
-              We are musicians and artists who want to make sure future
-              generations can have thriving careers in music post-AI.
+              As musicians and artists, mainly our mission is to ensure future
+              generations can thrive in a music industry shaped by AI.
             </h3>
             <p>
-              We do this by advocating for artists’ rights and new standards for
-              ethical AI. We partner with universities in their music and data
-              science departments working with the next generation of the music
-              industry. We innovate solutions in ethical licensing and AI rights
-              management. We put this to the test by developing artists,
-              creating music and content that embraces AI in search of the next
-              generation of music.
+              At Balanced Pitch, we advocate for artists' rights and establish
+              ethical AI standards. Collaborating with universities, we engage
+              with music and data science programs to empower the next wave of
+              creators and innovators. We pioneer solutions in ethical licensing
+              and AI rights management, actively testing our ideas by fostering
+              talent, producing music, and embracing AI to shape the future of
+              sound.
             </p>
+
             <div className="about-us-cta">
               <button>
-                <Link to="/">Talk to us</Link>
+                <Link to="/contact">Talk to us</Link>
               </button>
             </div>
           </div>
@@ -71,15 +74,16 @@ const About = () => {
             <img src="/about/team-bg.jpg" alt="" />
           </div>
           <div className="team-header">
-            <h3>The Sound Ethics</h3>
+            <h3>The Balanced</h3>
             <h1>Team</h1>
             <div className="join-team-card">
-              <h3>Join the Team</h3>
+              <h3>Be Part of Our Journey</h3>
               <p>
-                We embrace a decentralized organization to empower our team,
-                foster innovation, and respond swiftly to meet the rapid advance
-                of AI.
+                At Balanced Pitch, we champion a collaborative and adaptive
+                approach, empowering our team to innovate and thrive in the
+                fast-evolving world of AI.
               </p>
+
               <div className="join-team-cta">
                 <button>
                   <Link to="/">Careers</Link>
@@ -91,18 +95,19 @@ const About = () => {
             <div className="team-list-row">
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team1.jpg" alt="" />
+                  <img src="/about/team1.jpg" alt="Team member 1" />
                 </div>
                 <div className="player-info">
-                  <h3>James O'Brien</h3>
-                  <p>Founder Co-CEO</p>
+                  <h3>Alex Morgan</h3>
+                  <p>Co-Founder & CEO</p>
                 </div>
                 <div className="player-desc">
                   <p>
-                    James has dedicated over 30 years to the music industry,
-                    blending his roles as a producer, composer, and developer
-                    with a passion for advocating artists' rights in the
-                    evolving digital landscape.
+                    Alex brings over three decades of experience in the music
+                    industry, combining a career as a composer, producer, and
+                    innovator. With a deep commitment to artists' rights, Alex
+                    leads Balanced Pitch in shaping a fair and sustainable
+                    future for music in the AI era.
                   </p>
                 </div>
                 <div className="player-social">
@@ -111,18 +116,18 @@ const About = () => {
               </div>
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team2.jpg" alt="" />
+                  <img src="/about/team2.jpg" alt="Team member 2" />
                 </div>
                 <div className="player-info">
-                  <h3>James O'Brien</h3>
-                  <p>Founder Co-CEO</p>
+                  <h3>Jordan Lee</h3>
+                  <p>Chief Technology Officer</p>
                 </div>
                 <div className="player-desc">
                   <p>
-                    James has dedicated over 30 years to the music industry,
-                    blending his roles as a producer, composer, and developer
-                    with a passion for advocating artists' rights in the
-                    evolving digital landscape.
+                    Jordan is a tech visionary with a passion for innovation in
+                    music and AI. With a background in software development and
+                    a love for music, Jordan drives our technical strategies to
+                    ensure ethical AI integration in the industry.
                   </p>
                 </div>
                 <div className="player-social">
@@ -133,18 +138,18 @@ const About = () => {
             <div className="team-list-row">
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team3.jpg" alt="" />
+                  <img src="/about/team3.jpg" alt="Team member 3" />
                 </div>
                 <div className="player-info">
-                  <h3>James O'Brien</h3>
-                  <p>Founder Co-CEO</p>
+                  <h3>Samantha Grey</h3>
+                  <p>Head of Artist Advocacy</p>
                 </div>
                 <div className="player-desc">
                   <p>
-                    James has dedicated over 30 years to the music industry,
-                    blending his roles as a producer, composer, and developer
-                    with a passion for advocating artists' rights in the
-                    evolving digital landscape.
+                    Samantha has spent her career championing the rights of
+                    creators. With a deep understanding of the music business,
+                    she works tirelessly to ensure artists' voices are heard and
+                    protected in the ever-evolving digital landscape.
                   </p>
                 </div>
                 <div className="player-social">
@@ -153,18 +158,18 @@ const About = () => {
               </div>
               <div className="team-player">
                 <div className="player-img">
-                  <img src="/about/team4.jpg" alt="" />
+                  <img src="/about/team4.jpg" alt="Team member 4" />
                 </div>
                 <div className="player-info">
-                  <h3>James O'Brien</h3>
-                  <p>Founder Co-CEO</p>
+                  <h3>Riley Bennett</h3>
+                  <p>Director of Partnerships</p>
                 </div>
                 <div className="player-desc">
                   <p>
-                    James has dedicated over 30 years to the music industry,
-                    blending his roles as a producer, composer, and developer
-                    with a passion for advocating artists' rights in the
-                    evolving digital landscape.
+                    Riley specializes in forging connections between Balanced
+                    Pitch and key industry players. With a background in music
+                    and business development, Riley ensures our partnerships
+                    align with our mission to protect and empower creators.
                   </p>
                 </div>
                 <div className="player-social">
@@ -176,28 +181,28 @@ const About = () => {
         </section>
 
         <section className="about-marquee">
-          <div class="marquee_container">
-            <div class="marquee">
-              <h1>First Text</h1>
-              <h1>Second Text</h1>
-              <h1>Third Text</h1>
-              <h1>First Text</h1>
-              <h1>Second Text</h1>
-              <h1>Third Text</h1>
-              <h1>First Text</h1>
-              <h1>Second Text</h1>
-              <h1>Third Text</h1>
+          <div className="marquee_container">
+            <div className="marquee">
+              <h1>Innovate Music</h1>
+              <h1>Empower Artists</h1>
+              <h1>Ethical AI</h1>
+              <h1>Innovate Music</h1>
+              <h1>Empower Artists</h1>
+              <h1>Ethical AI</h1>
+              <h1>Innovate Music</h1>
+              <h1>Empower Artists</h1>
+              <h1>Ethical AI</h1>
             </div>
-            <div class="marquee">
-              <h1>First Text</h1>
-              <h1>Second Text</h1>
-              <h1>Third Text</h1>
-              <h1>First Text</h1>
-              <h1>Second Text</h1>
-              <h1>Third Text</h1>
-              <h1>First Text</h1>
-              <h1>Second Text</h1>
-              <h1>Third Text</h1>
+            <div className="marquee">
+              <h1>Innovate Music</h1>
+              <h1>Empower Artists</h1>
+              <h1>Ethical AI</h1>
+              <h1>Innovate Music</h1>
+              <h1>Empower Artists</h1>
+              <h1>Ethical AI</h1>
+              <h1>Innovate Music</h1>
+              <h1>Empower Artists</h1>
+              <h1>Ethical AI</h1>
             </div>
           </div>
         </section>
@@ -206,61 +211,62 @@ const About = () => {
           <div className="service-row">
             <div className="service-title">
               <h3>01.</h3>
-              <h3>Absolute Respect for Creative Copyright</h3>
+              <h3>Respecting Creative Ownership</h3>
             </div>
             <div className="service-desc">
-              <p>No Training Models Without Direct Consent</p>
+              <p>AI Training Starts With Permission</p>
               <p>
-                We insist on transparent attribution of training data. Preserve
-                the legacy and rights of human works that fuel AI progress.
+                We prioritize clear consent and transparency when it comes to
+                training AI models. Our mission is to honor the creative legacy
+                and rights of human artists as technology evolves.
               </p>
             </div>
           </div>
           <div className="service-row">
             <div className="service-title">
               <h3>02.</h3>
-              <h3>Innovation and Collaboration</h3>
+              <h3>Driving Innovation Through Unity</h3>
             </div>
             <div className="service-desc">
-              <p>We Cannot Rely On Policymakers To "Fix" This Problem</p>
+              <p>Action Beyond Legislation</p>
               <p>
-                While we advocate for legislative support, we place greater
-                emphasis on collective efforts and industry self-regulation. We
-                support the creation, adoption, and facilitation of legal
-                frameworks and ethical guidelines.
+                While advocating for supportive policies, we focus on collective
+                industry efforts to develop ethical frameworks and
+                self-regulation, ensuring responsible AI innovation.
               </p>
             </div>
           </div>
           <div className="service-row">
             <div className="service-title">
               <h3>03.</h3>
-              <h3>Standards in AI Rights</h3>
+              <h3>Establishing AI Rights Standards</h3>
             </div>
             <div className="service-desc">
-              <p>Metadata Is Key for Correct Attributions in AI Applications</p>
+              <p>Metadata Is the Foundation of Fair AI</p>
               <p>
-                Standardizing AI rights is essential, focusing on copyrights and
-                attributions of training data. We collaborate with industry
-                partners to create open AI rights frameworks, ensuring ethical
-                integration of AI that respects all stakeholders' rights.
+                Setting global standards for AI rights ensures proper
+                attributions and respect for training data. We collaborate with
+                industry leaders to develop open frameworks that balance
+                innovation with ethical responsibility.
               </p>
             </div>
           </div>
           <div className="service-row">
             <div className="service-title">
               <h3>04.</h3>
-              <h3>Education for Ethical AI Advocacy</h3>
+              <h3>Empowering Ethical AI Awareness</h3>
             </div>
             <div className="service-desc">
-              <p>The Power of Knowledge to Transform the Music Industry</p>
+              <p>Knowledge Transforms the Industry</p>
               <p>
-                Our commitment lies in educating artists, industry
-                professionals, data scientists, and the broader public about
-                AI's implications for music rights.
+                We are dedicated to educating artists, technologists, and the
+                public on the intersection of AI and music, equipping everyone
+                with the tools to advocate for fair practices.
               </p>
             </div>
           </div>
         </section>
+
         <section className="contact-banner">
           <div className="contact-banner-col">
             <div className="contact-banner-header">
@@ -269,28 +275,30 @@ const About = () => {
                 Pitch Inc.
               </h2>
               <p className="primary">
-                1800 vine streethollywood, ca 90028, usa
+                123 Harmony Lane, Los Angeles, CA 90210, USA
               </p>
             </div>
 
             <div className="banner-contact">
-              <p className="primary">Info@balancedpitch.ai</p>
+              <p className="primary">Info@balancedpitch.com</p>
               <p>Established 2024</p>
             </div>
             <div className="banner-info">
               <p>
-                Sound Ethics Data offers meticulously curated datasets for
-                machine learning, embedded with comprehensive attribution
-                metadata and advanced machine learning features.
+                Balanced Pitch provides expertly crafted datasets for machine
+                learning, enriched with detailed attribution metadata and
+                cutting-edge AI-ready features to ensure ethical and innovative
+                solutions.
               </p>
             </div>
           </div>
           <div className="contact-banner-col">
             <div className="contact-banner-img">
-              <img src="/contact/banner.jpg" alt="" />
+              <img src="/about/banner.jpg" alt="Balanced Pitch Banner" />
             </div>
           </div>
         </section>
+
         <Footer />
       </div>
     </ReactLenis>

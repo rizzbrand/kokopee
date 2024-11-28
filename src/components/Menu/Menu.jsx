@@ -4,7 +4,7 @@ import "./Menu.css";
 
 import gsap from "gsap";
 
-const Menu = ({ isOpen, setIsOpen }) => {
+const Menu = ({ isOpen, setIsOpen, isDark }) => {
   const [isAnimating, setIsAnimating] = useState(false);
   const menuColsRef = useRef([]);
   const menuOverlayRef = useRef(null);
@@ -67,6 +67,9 @@ const Menu = ({ isOpen, setIsOpen }) => {
         stagger: 0.125,
         ease: "power4.inOut",
       })
+      .set(menuOverlayRef.current, {
+        pointerEvents: "all",
+      })
       .to(
         menuBgRef.current,
         {
@@ -86,9 +89,7 @@ const Menu = ({ isOpen, setIsOpen }) => {
         },
         "-=2"
       )
-      .set(menuOverlayRef.current, {
-        pointerEvents: "all",
-      })
+
       .to(
         [menuCloseRef.current, ...menuItemsRef.current, menuFooterRef.current],
         {
@@ -161,7 +162,7 @@ const Menu = ({ isOpen, setIsOpen }) => {
     e.preventDefault();
     setTimeout(() => {
       navigate(to);
-    }, 250);
+    }, 0);
   };
 
   const addToRefs = (el) => {
@@ -177,11 +178,15 @@ const Menu = ({ isOpen, setIsOpen }) => {
   };
 
   return (
-    <div className="menu">
+    <div className={`menu ${isDark ? "dark" : ""}`}>
       <div className="menu-bar">
         <div className="logo">
           <Link to="/" onClick={handleNavigation("/")}>
-            <img src="/logo.png" alt="" />
+            <img
+              id="logo"
+              src={isDark ? "/logo-dark.png" : "/logo.png"}
+              alt="Logo"
+            />
           </Link>
         </div>
 
