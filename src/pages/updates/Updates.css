@@ -64,6 +64,11 @@ section.updates-hero {
 .article-img {
   position: relative;
   height: 400px;
+  overflow: hidden;
+}
+
+.article-img img {
+  transform: scale(2);
 }
 
 .article-img img {

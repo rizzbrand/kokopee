@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router";
+import ParallaxImage from "../ParallaxImage/ParallaxImage";
+
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-bg">
-        <img src="/footer/footer.jpg" alt="" />
+        <ParallaxImage src="/footer/footer.jpg" alt="" />
       </div>
 
       <div className="footer-nav">

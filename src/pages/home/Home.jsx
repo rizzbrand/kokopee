@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import Footer from "../../components/Footer/Footer";
 import Transition from "../../components/transition/Transition";
+import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 
 import "./Home.css";
 
@@ -15,7 +16,7 @@ const Home = () => {
       <div className="page home">
         <section className="hero">
           <div className="hero-img">
-            <img src="/home/hero.jpg" alt="" />
+            <ParallaxImage src="/home/hero.jpg" alt="" />
           </div>
 
           <div className="hero-header">
@@ -65,14 +66,16 @@ const Home = () => {
               safeguarded.
             </p>
             <div className="intro-img">
-              <img src="/home/site-intro.jpg" alt="" />
+              <div className="intro-img-wrapper">
+                <ParallaxImage src="/home/site-intro.jpg" alt="" />
+              </div>
             </div>
           </div>
         </section>
 
         <section className="cover">
           <div className="cover-img">
-            <img src="/home/cover.jpg" alt="" />
+            <ParallaxImage src="/home/cover.jpg" alt="" />
           </div>
 
           <div className="cover-copy">
@@ -155,10 +158,7 @@ const Home = () => {
           <div className="articles-row">
             <div className="article">
               <div className="article-img">
-                <img src="/updates/article1.jpg" alt="" />
-                <div className="article-date">
-                  <p>6.19.2024 &nbsp; News</p>
-                </div>
+                <ParallaxImage src="/updates/article1.jpg" alt="" speed={0.1} />
               </div>
               <div className="article-title">
                 <h3>
@@ -175,10 +175,7 @@ const Home = () => {
 
             <div className="article">
               <div className="article-img">
-                <img src="/updates/article2.jpg" alt="" />
-                <div className="article-date">
-                  <p>6.19.2024 &nbsp; News</p>
-                </div>
+                <ParallaxImage src="/updates/article2.jpg" alt="" speed={0.1} />
               </div>
               <div className="article-title">
                 <h3>

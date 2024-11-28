@@ -2,12 +2,24 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .footer-bg {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-bg div {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.135);
+}
+
+.footer-bg img {
   width: 100%;
   height: 100%;
 }
