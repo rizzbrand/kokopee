@@ -162,6 +162,7 @@ section.hero {
   padding: 2em 0;
   text-align: center;
   color: var(--color-dark);
+  background-color: var(--color-accent);
 }
 
 .mix-tape h1 {
