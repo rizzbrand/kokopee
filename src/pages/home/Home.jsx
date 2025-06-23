@@ -48,7 +48,7 @@ const Home = () => {
             </h1>
             <p>The lyrical engineer</p>
             <div className="stickers">
-              <img src="/stickers.png" alt="" />
+              {/* <img src="/stickers.png" alt="" /> */}
             </div>
             <button>
               <Link to="/contact">Get in touch</Link>
@@ -83,13 +83,8 @@ const Home = () => {
             </h2>
             <h3>A storyteller who blends street wisdom with feel-good melodies.</h3>
             <p>
-              AI is reshaping the landscape, leveraging the art we’ve poured our
-              souls into—often without recognition or consent. At Balanced
-              Pitch, we believe in harnessing AI's potential while fiercely
-              protecting the artists at its heart. By collaborating with
-              educators, legal pioneers, and industry leaders, we are building a
-              future where creativity is respected, and artists’ rights are
-              safeguarded.
+            “Shine Na is not just an EP, it’s a movement. 
+            A 5-track energy booster made to uplift, motivate, and make you dance.”
             </p>
             <div className="intro-img">
               <div className="intro-img-wrapper">

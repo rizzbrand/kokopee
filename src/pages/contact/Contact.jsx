@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="contact-hero-header">
             <h1>Get in touch</h1>
             <div className="stickers">
-              <img src="/stickers.png" alt="" />
+              {/* <img src="/stickers.png" alt="" /> */}
             </div>
           </div>
 
