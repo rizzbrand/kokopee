@@ -6,15 +6,15 @@ const MusicPlayer = () => {
   const songs = [
     {
       id: 1,
-      title: "Dreamland",
-      artist: "By Balanced Pitch",
+      title: "Shine na",
+      artist: "By koko pe",
       diskArt: "/songs/dreamland.png",
       mp3: "/songs/dreamland.mp3",
     },
     {
       id: 2,
-      title: "Gameplay",
-      artist: "By Balanced Pitch",
+      title: "Don't play",
+      artist: "By koko pe, verydarkman",
       diskArt: "/songs/gameplay.png",
       mp3: "/songs/gameplay.mp3",
     },

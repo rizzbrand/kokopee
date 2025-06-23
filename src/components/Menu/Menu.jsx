@@ -43,7 +43,7 @@ const Menu = ({ isOpen, setIsOpen, isDark }) => {
         opacity: 0,
       });
       setIsOpen(false);
-    }, 1000);
+    }, 750);
 
     return () => {
       if (navigationTimeoutRef.current) {
@@ -214,24 +214,31 @@ const Menu = ({ isOpen, setIsOpen, isDark }) => {
           </div>
 
           <div className="menu-items">
-            <div className="menu-item" ref={addToMenuItemsRef}>
+          <div className="menu-item" ref={addToMenuItemsRef}>
               <p>
-                <Link to="/about" onClick={handleNavigation("/about")}>
-                  About Us
+                <Link to="/" onClick={handleNavigation("/")}>
+                  Home
                 </Link>
               </p>
             </div>
+            {/* <div className="menu-item" ref={addToMenuItemsRef}>
+              <p>
+                <Link to="/about" onClick={handleNavigation("/about")}>
+                  Bio
+                </Link>
+              </p>
+            </div> */}
             <div className="menu-item" ref={addToMenuItemsRef}>
               <p>
                 <Link to="/solutions" onClick={handleNavigation("/solutions")}>
-                  Solutions
+                  Bio
                 </Link>
               </p>
             </div>
             <div className="menu-item" ref={addToMenuItemsRef}>
               <p>
                 <Link to="/updates" onClick={handleNavigation("/updates")}>
-                  Updates
+                  Events/ Tours
                 </Link>
               </p>
             </div>
@@ -245,8 +252,8 @@ const Menu = ({ isOpen, setIsOpen, isDark }) => {
           </div>
 
           <div className="menu-footer" ref={menuFooterRef}>
-            <p className="primary">Empowering Creativity. Redefining Sound.</p>
-            <p>Shaping the Future of Music with AI</p>
+            <p className="primary">Dkokope is more than music.</p>
+            <p>It’s rhythm. It’s truth. It’s therapy.</p>
           </div>
         </div>
       </div>

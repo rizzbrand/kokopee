@@ -8,7 +8,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-bg">
-        <ParallaxImage src="/footer/footer.jpg" alt="" />
+        <video autoPlay muted loop playsInline>
+          <source src="/footer/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className="footer-nav">
@@ -28,22 +31,22 @@ const Footer = () => {
 
       <div className="footer-outro">
         <div className="footer-col">
-          <p>Have Questions?</p>
+          <p></p>
           <h3>Get in Touch</h3>
           <p className="primary">
-            Info@balancedpitch.com <br />
-            LinkedIn / Careers
+             <br />
+            
           </p>
-          <p>© 2024 Balanced Pitch</p>
+          <p>© 2025 kokopee music</p>
         </div>
         <div className="footer-col">
-          <p>Planning a Visit?</p>
-          <h3>Our Location</h3>
+          <p></p>
+          <h3></h3>
           <p className="primary">
-            123 Harmony Lane <br />
-            Los Angeles, CA 90210, USA
+            <br />
+          
           </p>
-          <p>Designed by Codegrid</p>
+          <p>Designed by Rizzbrand.site</p>
         </div>
       </div>
 

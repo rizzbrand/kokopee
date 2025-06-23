@@ -44,9 +44,9 @@ const Home = () => {
 
           <div className="hero-header">
             <h1>
-              Balanced <br /> Pitch
+              ITS <br /> KOKOPE
             </h1>
-            <p>Shaping the Future of Music with AI</p>
+            <p>The lyrical engineer</p>
             <div className="stickers">
               <img src="/stickers.png" alt="" />
             </div>
@@ -58,11 +58,11 @@ const Home = () => {
           <div className="news-article">
             <div className="news-article-title">
               <p className="primary">
-                AI Disputes Ignite: Harmony <br /> or Discord Ahead?
+                EP: All i need is kokope <br /> Coming soon!
               </p>
             </div>
             <div className="news-article-info">
-              <p>7.1.2024</p>
+              <p>7-06-2025</p>
               <p>News</p>
             </div>
           </div>
@@ -70,17 +70,18 @@ const Home = () => {
 
         <section className="site-intro">
           <div className="intro-col">
-            <p className="primary">Empowering Creativity. Redefining Sound.</p>
-            <p>Shaping the Future of Music with AI</p>
+            <p className="primary">Dkokope is more than music.
+            It’s rhythm. It’s truth. It’s therapy..</p>
+            <p>Welcome to my world</p>
 
             <MusicPlayer />
           </div>
           <div className="intro-col">
             <p>The music industry stands at a pivotal crossroads.</p>
             <h2>
-              A New <br /> Gold Tech
+            The Only <br /> Lyrical Engineer
             </h2>
-            <h3>Innovation thrives, but artists are left behind.</h3>
+            <h3>A storyteller who blends street wisdom with feel-good melodies.</h3>
             <p>
               AI is reshaping the landscape, leveraging the art we’ve poured our
               souls into—often without recognition or consent. At Balanced
@@ -100,10 +101,13 @@ const Home = () => {
 
         <section className="cover">
           <div className="cover-img">
-            <ParallaxImage src="/home/cover.jpg" alt="" />
+           <video autoPlay muted loop playsInline>
+           <source src="/footer/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+           </video>
           </div>
 
-          <div className="cover-copy">
+          {/* <div className="cover-copy">
             <h3>Committed For</h3>
             <h2>Creative AI</h2>
             <p>
@@ -127,16 +131,16 @@ const Home = () => {
                 <Link to="/">Our Mission</Link>
               </button>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section className="mix-tape">
-          <p className="primary">Responsible AI in Academia</p>
+          <p className="primary">Latest Ep – Shine Na </p>
           <p>Balanced Pitch</p>
 
           <h1>
-            From Innovation <br />
-            To Iconic
+          #ShineNa<br />
+          Challenge
           </h1>
 
           <div className="tape">
@@ -150,17 +154,15 @@ const Home = () => {
 
           <div className="tape-info">
             <p>
-              The next generation of data scientists and music creators is
-              shaping the AI technologies that will define the future of the
-              music industry.
+            “Shine Na is not just an EP, it’s a movement. A 5-track energy booster made to uplift, 
+            motivate, and make you dance.”
+            
             </p>
             <br />
             <br />
             <p>
-              Balanced Pitch collaborates with universities and their music
-              programs to promote awareness and establish ethical AI practices.
-              We also offer opportunities for aspiring artists and data
-              engineers to innovate and thrive in the evolving music landscape.
+            Join hundreds dancing, vibing, and spreading light.
+→ ₦500K reward pool – content that slaps gets cash!
             </p>
 
             <div className="sticker">
@@ -170,7 +172,7 @@ const Home = () => {
         </section>
 
         <section className="latest-updates">
-          <h1>Latest Updates</h1>
+          <h1>Latest Tours</h1>
           <p className="lp-tagline">
             Explore the latest updates, comprehensive guidelines, and valuable
             resources at the crossroads of AI innovation and the music industry.
@@ -187,8 +189,7 @@ const Home = () => {
               </div>
               <div className="article-title">
                 <h3>
-                  The Fight for Authenticity: Tackling Unauthorized AI-Generated
-                  Voices
+                “FRIDAY FLEX” at Cruise Control, Ghana
                 </h3>
               </div>
               <div className="article-link">
@@ -204,7 +205,7 @@ const Home = () => {
               </div>
               <div className="article-title">
                 <h3>
-                  Protecting Iconic Voices: The Struggle Against AI Imitation
+                KOKO Camden, London — May 27, 2025
                 </h3>
               </div>
               <div className="article-link">

@@ -18,7 +18,7 @@ const Updates = () => {
           <h1>Latest Updates</h1>
         </section>
 
-        <section className="filters">
+        <section className="filters" style={{ display: "none" }}>
           <div className="filter active">
             <p>All</p>
           </div>
@@ -43,7 +43,7 @@ const Updates = () => {
                 </div>
               </div>
               <div className="article-title">
-                <h3>AI vs. Creativity: The Fight for Authentic Voices</h3>
+                <h3>Koko pee in china</h3>
               </div>
               <div className="article-link">
                 <p className="primary">
@@ -70,7 +70,7 @@ const Updates = () => {
             </div>
           </div>
 
-          <div className="articles-row">
+          {/* <div className="articles-row">
             <div className="article">
               <div className="article-img">
                 <img src="/updates/article3.jpg" alt="Artists' Rights" />
@@ -104,7 +104,7 @@ const Updates = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="articles-row">
             <div className="article">
@@ -115,7 +115,7 @@ const Updates = () => {
                 </div>
               </div>
               <div className="article-title">
-                <h3>Policy Reforms: Ensuring Fairness in AI Practices</h3>
+                <h3>koko pee in turkey</h3>
               </div>
               <div className="article-link">
                 <p className="primary">
@@ -132,7 +132,7 @@ const Updates = () => {
                 </div>
               </div>
               <div className="article-title">
-                <h3>AI Meets Creative Rights: Striking the Balance</h3>
+                <h3>Live DJ Sets – “FRIDAY FLEX” at Cruise Control, Ghana</h3>
               </div>
               <div className="article-link">
                 <p className="primary">
@@ -142,7 +142,7 @@ const Updates = () => {
             </div>
           </div>
 
-          <div className="articles-row">
+          {/* <div className="articles-row">
             <div className="article">
               <div className="article-img">
                 <img src="/updates/article7.jpg" alt="Future of AI" />
@@ -161,7 +161,7 @@ const Updates = () => {
             </div>
 
             <div className="article"></div>
-          </div>
+          </div> */}
         </section>
 
         <section className="contact-banner">

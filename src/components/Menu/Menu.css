@@ -188,4 +188,18 @@
     width: 90%;
     text-align: center;
   }
+
+  .menu-item p a {
+    font-size: 60px; /* Reduced from 130px */
+    line-height: 60px; /* Adjusted line height */
+    height: 60px; /* Adjusted height */
+  }
+
+  .menu-close p {
+    font-size: 36px; /* Reduced from 48px */
+  }
+
+  .menu-footer p {
+    font-size: 16px; /* Reduced footer text size */
+  }
 }
